@@ -34,7 +34,7 @@ const CarBooking = () => {
         </Grid>
         <Grid item xs={12} sm={4}>
           <TextField
-            label="Max Price ($/day)"
+            label="Max Price (₹/day)"
             type="number"
             value={maxPrice}
             onChange={(e) => setMaxPrice(e.target.value)}
