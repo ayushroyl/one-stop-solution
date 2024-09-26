@@ -1,0 +1,149 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Container styles */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Back button container styles */
+.back-button-container {
+  position: fixed;
+  top: 10px; /* Reduced space from the top */
+  left: 10px; /* Reduced space from the left */
+  z-index: 100;
+}
+
+/* Back button styles */
+.back-button {
+  background: linear-gradient(135deg, #6dd5ed, #2193b0); /* Gradient color */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px; /* Reduced padding for smaller button */
+  font-size: 16px; /* Reduced font size */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s ease;
+  width: 40px; /* Set a specific width */
+  height: 40px; /* Set a specific height */
+}
+
+/* Icon style inside the button */
+.back-button i {
+  font-size: 16px; /* Adjusted font size for icon */
+  color: #fff; /* Make the icon white */
+}
+
+/* Hover effect */
+.back-button:hover {
+  background: linear-gradient(135deg, #2193b0, #6dd5ed); /* Hover gradient effect */
+  transform: translateY(-3px); /* Slight lift on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.back-button:focus {
+  outline: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .back-button {
+    padding: 8px; /* Reduced padding on mobile */
+    font-size: 14px; /* Smaller font size for mobile */
+    width: 35px; /* Smaller button size */
+    height: 35px; /* Smaller button height */
+  }
+
+  .back-button-container {
+    top: 5px; /* Reduced margin for mobile */
+    left: 5px;
+  }
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #007bff;
+  color: white;
+  font-size: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 50; /* Ensure the header stays above other elements */
+}
+
+/* Card styles */
+.card {
+  background-color: #000000;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px 0;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styles */
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  margin: 10px 0;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    margin: 10px 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
